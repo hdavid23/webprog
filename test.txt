@@ -1,0 +1,6 @@
+git pull - letöltés
+
+FELTÖLTÉS
+1. git add --all 
+2. git commit -m "message"
+3. git push 
