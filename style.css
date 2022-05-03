@@ -22,4 +22,19 @@ header{
     width: 85%;
     height: 95%;
     border: 1px solid white;
+    display: flex;
+}
+
+header .menu, .song{
+    position: relative;
+    width: 25%;
+    height: 90%;
+    /*border: 1px solid white;*/
+    background-color: #747474;
+    color: white;
+}
+
+header .song{
+    width: 75%;
+    background: #444444;
 }
