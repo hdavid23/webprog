@@ -108,3 +108,21 @@ header .menu .playlist .active .bi{
     display: flex;
     margin-right: 20px;
 }
+
+header .menu .menu_song{
+    width: 100%;
+    height: 320px;
+    border: 1px solid white;
+    margin-top: 40px;
+}
+
+header .menu .menu_song li{
+    list-style-type: none;
+    padding: 5px 0px 5px 20px;
+}
+
+header .menu .menu_song li span{
+    font-size: 12px;
+    font-weight: 600;
+    color: greenyellow;
+}
