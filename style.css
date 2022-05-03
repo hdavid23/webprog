@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
     padding: 0%;
     margin: 0%;
@@ -23,6 +23,8 @@ header{
     height: 95%;
     border: 1px solid white;
     display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 header .menu, .song{
@@ -37,4 +39,72 @@ header .menu, .song{
 header .song{
     width: 75%;
     background: #444444;
+}
+
+header .master{
+    width: 100%;
+    height: 10%;
+    background: #747474;
+}
+
+header .menu h1{
+    font-size: 20px;
+    margin: 15px 0px 0px 20px;
+    font-weight: 500;
+}
+
+header .menu .playlist{
+    margin: 40px 0px 0px 20px;
+}
+
+header .menu .playlist h4{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    color: greenyellow;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+}
+
+header .menu .playlist h4:hover{
+    color: white;
+}
+
+header .menu .playlist h4 span{
+    position: relative;
+    margin-right: 35px;
+}
+
+header .menu .playlist h4 span::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    top: -4px;
+    transition: .3s linear;
+}
+
+header .menu .playlist h4:hover span::before{
+    border: 2px solid white;
+}
+
+header .menu .playlist h4 .bi{
+    display: none;
+}
+
+header .menu .playlist .active{
+    color: #59981A;
+}
+
+header .menu .playlist .active span{
+    display: none;
+}
+
+header .menu .playlist .active .bi{
+    display: flex;
+    margin-right: 20px;
 }
