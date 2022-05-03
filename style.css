@@ -128,7 +128,7 @@ header .menu .menu_song li{
 }
 
 header .menu .menu_song li:hover{
-    background: rgba(27, 27, 30, 0.1);
+    background: rgba(27, 27, 30,.1);
 }
 
 header .menu .menu_song li span{
@@ -169,10 +169,11 @@ header .master{
 header .master .wave{
     width: 30px;
     height: 30px;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     padding-bottom: 5px;
     display: flex;
     align-items: flex-end;
+    margin-right: 10px;
 }
 
 header .master .wave .wave1{
@@ -181,16 +182,27 @@ header .master .wave .wave1{
     margin-right: 3px;
     border-radius: 10px 10px 0px 0px;
     background: #59981A;
-    animation: wave 2s linear infinite;
+    animation: unset;
 }
 
 header .master .wave .wave1:nth-child(2){
     height: 13px;
-    animation-delay: .4s;
+    /*animation-delay: .4s;*/
 }
 
 header .master .wave .wave1:nth-child(3){
     height: 8px;
+    /*animation-delay: .8s*/;
+}
+
+header .master .active2 .wave1{
+    animation: wave .5s linear infinite;
+}
+header .master .active2 .wave1:nth-child(2){
+    animation-delay: .4s;
+}
+
+header .master .active2 .wave1:nth-child(3){
     animation-delay: .8s;
 }
 
@@ -204,4 +216,41 @@ header .master .wave .wave1:nth-child(3){
     100%{
         height: 10px;
     }
+}
+
+header .master img{
+    width: 35px;
+    height: 35px;
+}
+
+header .master h5{
+    width: 130px;
+    font-size: 13px;
+    margin-left: 15px;
+    color: #fff;
+    line-height: 17px;
+}
+
+header .master h5 .subtitle{
+    font-size: 11px;
+    color: greenyellow;
+}
+
+header .master .icon{
+    font-size: 20px;
+    color: #fff;
+    margin: 0px 20px 0px 40px;
+}
+
+header .master .icon .bi{
+    cursor: pointer;
+    outline: none;
+}
+
+header .master .icon .bi:nth-child(2){
+    border: 1px solid rgba(27, 27, 30,.1);
+    border-radius: 50%;
+    padding: 1px 3px 0px 6px;
+    margin: 0px 5px;
+    transition: .3s linear;
 }
