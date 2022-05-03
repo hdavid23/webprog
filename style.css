@@ -61,7 +61,7 @@ header .menu .playlist h4{
     font-size: 14px;
     font-weight: 400;
     padding: 10px;
-    color: greenyellow;
+    color: #59981A;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@ header .menu .playlist h4 span::before{
     position: absolute;
     width: 4px;
     height: 4px;
-    border: 2px solid greenyellow;
+    border: 2px solid #59981A;
     border-radius: 50%;
     top: -4px;
     transition: .3s linear;
@@ -97,7 +97,7 @@ header .menu .playlist h4 .bi{
 }
 
 header .menu .playlist .active{
-    color: #59981A;
+    color: greenyellow;
 }
 
 header .menu .playlist .active span{
@@ -134,7 +134,7 @@ header .menu .menu_song li:hover{
 header .menu .menu_song li span{
     font-size: 12px;
     font-weight: 600;
-    color: greenyellow;
+    color: #59981A;
 }
 
 header .menu .menu_song li img{
@@ -150,7 +150,7 @@ header .menu .menu_song li h5{
 
 header .menu .menu_song li h5 .subtitle{
     font-size: 9px;
-    color: greenyellow;
+    color: #59981A;
 }
 
 header .menu .menu_song li .bi{
@@ -181,7 +181,7 @@ header .master .wave .wave1{
     height: 10px;
     margin-right: 3px;
     border-radius: 10px 10px 0px 0px;
-    background: #59981A;
+    background: greenyellow;
     animation: unset;
 }
 
@@ -233,7 +233,7 @@ header .master h5{
 
 header .master h5 .subtitle{
     font-size: 11px;
-    color: greenyellow;
+    color: #59981A;
 }
 
 header .master .icon{
@@ -253,4 +253,281 @@ header .master .icon .bi:nth-child(2){
     padding: 1px 3px 0px 6px;
     margin: 0px 5px;
     transition: .3s linear;
+}
+
+header .master span{
+    color: #fff;
+    width: 32px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+header .master #currendStart{
+    margin: 0px 0px 0px 20px;
+}
+
+header .master .bar{
+    position: relative;
+    width: 43%;
+    height: 2px;
+    background: rgba(27, 27, 30,.1);
+    margin: 0px 15px 0px 10px;
+}
+
+header .master .bar .bar2{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: greenyellow;
+    top:0;
+}
+
+header .master .bar .dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: greenyellow;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+header .master .bar .dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border:1px solid greenyellow;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px greenyellow;
+}
+
+header .master .bar input{
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999;
+    transition: 3s linear;
+    opacity: 0;
+}
+
+header .master .vol{
+    position: relative;
+    width: 100px;
+    height: 2px;
+    margin-left: 50px;
+    background: rgba(27, 27, 30,.1);
+}
+
+header .master .vol .bi{
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    top: -17px;
+    left: -30px;
+}
+
+header .master .vol input{
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999;
+    transition: 3s linear;
+    opacity: 0;
+}
+
+header .master .vol .vol_bar{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: greenyellow;
+    top:0;
+}
+
+header .master .vol .dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: greenyellow;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+header .master .vol .dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border:1px solid greenyellow;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px greenyellow;
+}
+
+header .song{
+    z-index: 2;
+}
+
+header .song::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    /*background: url('user.png');*/
+    z-index: -1;
+}
+
+header .song nav{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    /*border: 1px solid #fff;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .song nav ul{
+    display: flex;
+}
+
+header .song nav ul li{
+    position: relative;
+    list-style: none;
+    font-size: 13px;
+    color: #59981A;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: .3 linear;
+}
+
+header .song nav ul li:hover{
+    color: #fff;
+}
+
+header .song nav ul li:nth-child(1){
+    color: #fff;
+}
+
+header .song nav ul li span{
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    background: greenyellow;
+    bottom: -5px;
+    left: 0;
+    border-radius: 20px;
+}
+
+header .song nav .search{
+    position: relative;
+    width: 40%;
+    padding: 1px 10px;
+    border-radius: 20px;
+    color: rgb(180, 177, 177);
+}
+
+header .song nav .search::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgba(27, 27, 30,.1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+header .song nav .search .bi{
+    font-size: 13px;
+    padding: 3px 0px 0px 10px;
+}
+
+header .song nav .search input{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+header .song nav .user{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header .song nav .user img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px #131312;
+}
+
+header .song .content{
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    border: 1px solid white;
+    padding-top: 20px;
+}
+
+header .song .content h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+header .song .content p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #59981A;
+    margin: 5px;
+}
+
+header .song .content .buttons{
+    margin-top: 15px;
+}
+
+header .song .content .buttons button{
+    width: 130px;
+    height: 30px;
+    border: 2px solid greenyellow;
+    outline: none;
+    border-radius: 20px;
+    background: greenyellow;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header .song .content .buttons button:hover{
+    border: 2px solid greenyellow;
+    background: none;
+    color: greenyellow;
+}
+
+header .song .content .buttons button:nth-child(2){
+    border: 2px solid greenyellow;
+    background: none;
+    color: greenyellow;
+}
+
+header .song .content .buttons button:nth-child(2):hover{
+    border: 2px solid greenyellow;
+    background: greenyellow;
+    color: #fff;
 }
