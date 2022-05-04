@@ -482,7 +482,7 @@ header .song .content{
     width: 90%;
     height: 30%;
     margin: auto;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     padding-top: 20px;
 }
 
