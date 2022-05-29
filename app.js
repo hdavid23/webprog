@@ -18,17 +18,17 @@ const songs = [
     // all object type 
     {
         id:"3",
-        songName: `Cartoon - On & On <br><div class="subtitle"> Daniel Levi</div>`,
+        songName: `Zombi <br><div class="subtitle"> Manuel</div>`,
         poster: "img/3.jpg",
     },
     {
         id:"4",
-        songName: `Warriyo - Mortals <br><div class="subtitle">Mortals</div>`,
+        songName: `Gyere Velem <br><div class="subtitle">AKC Misi</div>`,
         poster: "img/4.jpg",
     },
     {
         id:"5",
-        songName: `Ertugrul Gazi <br><div class="subtitle">Ertugrul</div>`,
+        songName: `RoxtaR <br><div class="subtitle">Missh</div>`,
         poster: "img/5.jpg",
     },
     {
