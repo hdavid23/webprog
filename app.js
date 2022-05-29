@@ -68,12 +68,12 @@ const songs = [
     },
     {
         id:"13",
-        songName: `Baarishein <br><div class="subtitle">Atif Aslam</div>`,
+        songName: `Rampampam <br><div class="subtitle">Minelli</div>`,
         poster: "img/13.jpg",
     },
     {
         id:"14",
-        songName: `Vaaste <br><div class="subtitle">Dhvani Bhanushali</div>`,
+        songName: `PEZSGŐESŐ <br><div class="subtitle">WELLHELLO</div>`,
         poster: "img/14.jpg",
     },
     {
