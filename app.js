@@ -128,7 +128,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
         makeAllPlays();
         e.target.classList.remove('bi-play-circle-fill');
         e.target.classList.add('bi-pause-circle-fill');
-        music.src = `audio/${index}.mp3`;
+        music.src = `zene/${index}.mp3`;
         poster_master_play.src =`img/${index}.jpg`;
         music.play();
         let song_title = songs.filter((ele)=>{
@@ -233,7 +233,7 @@ back.addEventListener('click', ()=>{
     if (index < 1) {
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
-    music.src = `audio/${index}.mp3`;
+    music.src = `zene/${index}.mp3`;
     poster_master_play.src =`img/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
@@ -258,7 +258,7 @@ next.addEventListener('click', ()=>{
     if (index > Array.from(document.getElementsByClassName('songItem')).length) {
         index = 1;
         }
-    music.src = `audio/${index}.mp3`;
+    music.src = `zene/${index}.mp3`;
     poster_master_play.src =`img/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
