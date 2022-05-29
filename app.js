@@ -33,37 +33,37 @@ const songs = [
     },
     {
         id:"6",
-        songName: `Electronic Music <br><div class="subtitle">Electro</div>`,
+        songName: `AHA-AHA <br><div class="subtitle">Bruno x Spacc</div>`,
         poster: "img/6.jpg",
     },
     {
         id:"7",
-        songName: `Agar Tum Sath Ho <br><div class="subtitle">Tamashaa</div>`,
+        songName: `Ördög <br><div class="subtitle">KKevin</div>`,
         poster: "img/7.jpg",
     },
     {
         id:"8",
-        songName: `Suna Hai <br><div class="subtitle">Neha Kakker</div>`,
+        songName: `Néztek <br><div class="subtitle">Tóth Andi</div>`,
         poster: "img/8.jpg",
     },
     {
         id:"9",
-        songName: `Dilber <br><div class="subtitle">Satyameva Jayate</div>`,
+        songName: `Kukásautó <br><div class="subtitle">DESH</div>`,
         poster: "img/9.jpg",
     },
     {
         id:"10",
-        songName: `Duniya <br><div class="subtitle">Luka Chuppi</div>`,
+        songName: `Mióta Elhagytál <br><div class="subtitle">BSW</div>`,
         poster: "img/10.jpg",
     },
     {
         id:"11",
-        songName: `Lagdi Lahore Di <br><div class="subtitle">Street Dancer 3D</div>`,
+        songName: `Megcsináltad <br><div class="subtitle">G.w.M</div>`,
         poster: "img/11.jpg",
     },
     {
         id:"12",
-        songName: `Putt Jatt Da <br><div class="subtitle">Putt Jatt Da</div>`,
+        songName: `Hullik <br><div class="subtitle">ByeAlex</div>`,
         poster: "img/12.jpg",
     },
     {
