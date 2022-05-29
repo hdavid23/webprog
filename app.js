@@ -5,8 +5,8 @@ const music = new Audio('vande.mp3');
 const songs = [
     {
         id:'1',
-        songName:` On My Way <br>
-        <div class="subtitle">Alan Walker</div>`,
+        songName:` Okari <br>
+        <div class="subtitle">Azahria</div>`,
         poster: "img/1.jpg"
     },
     {
