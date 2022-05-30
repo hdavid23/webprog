@@ -1,4 +1,5 @@
 const music = new Audio('kezdo.mp3');
+const alan = new Audio("zene/2.mp3")
 
 const songs = [
     {
@@ -85,11 +86,25 @@ Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
     element.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
 })
 
-
+let lejatszas = document.getElementById('lejatszas');
 let masterPlay = document.getElementById('masterPlay');
 let wave = document.getElementsByClassName('wave')[0];
 
 masterPlay.addEventListener('click',()=>{
+    if (music.paused || music.currentTime <=0) {
+        music.play();
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
+        wave.classList.add('active2');
+    } else {
+        music.pause();
+        masterPlay.classList.add('bi-play-fill');
+        masterPlay.classList.remove('bi-pause-fill');
+        wave.classList.remove('active2');
+    }
+} )
+
+lejatszas.addEventListener('click',()=>{
     if (music.paused || music.currentTime <=0) {
         music.play();
         masterPlay.classList.remove('bi-play-fill');
