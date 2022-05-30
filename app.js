@@ -1,7 +1,5 @@
 const music = new Audio('kezdo.mp3');
 
-// create Array 
-
 const songs = [
     {
         id:'1',
@@ -15,7 +13,6 @@ const songs = [
         <div class="subtitle">Alan Walker</div>`,
         poster: "img/2.jpg"
     },
-    // all object type 
     {
         id:"3",
         songName: `Zombi <br><div class="subtitle"> Manuel</div>`,
