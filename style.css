@@ -315,7 +315,7 @@ header .master_play .vol input{
  header .master_play .vol .vol_bar{
     position: absolute;
     background: #adff2f;
-    width: 0%;
+    width: 50%;
     height: 100%;
     top: 0;
     transition: 1s linear;
@@ -326,7 +326,7 @@ header .master_play .vol input{
     height: 5px;
     background: #adff2f;
     border-radius: 50%;
-    left: 0%;
+    right: 50%;
     top: -1px;
     transition: 1s linear;
  }

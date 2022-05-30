@@ -1,5 +1,4 @@
 const music = new Audio('kezdo.mp3');
-const alan = new Audio("zene/2.mp3")
 
 const songs = [
     {
@@ -93,6 +92,7 @@ let wave = document.getElementsByClassName('wave')[0];
 masterPlay.addEventListener('click',()=>{
     if (music.paused || music.currentTime <=0) {
         music.play();
+        vol_icon.classList.add('bi-volume-up-fill');
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
         wave.classList.add('active2');
@@ -107,6 +107,7 @@ masterPlay.addEventListener('click',()=>{
 lejatszas.addEventListener('click',()=>{
     if (music.paused || music.currentTime <=0) {
         music.play();
+        vol_icon.classList.add('bi-volume-up-fill');
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
         wave.classList.add('active2');
