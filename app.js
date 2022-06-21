@@ -76,8 +76,9 @@ const songs = [
     {
         id:"15",
         songName: `Úristen <br><div class="subtitle">VALMAR</div>`,
-        poster: "img/15.jpg",
+        poster: "img/15.jpg"
     },
+    
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
