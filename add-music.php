@@ -35,6 +35,10 @@
                             <td><input type="file" name="music"></td>
                         </tr>
                         <tr>
+                            <td>Music Id:</td>
+                            <td><input type="text" name="musicid"></td>
+                        </tr>
+                        <tr>
                             <td colspan="2">
                                 <input type="submit" name="submit" value="Add Music" class="btn-secondary">
                             </td>
@@ -78,18 +82,20 @@
                     } else {
                         $music_name = "";
                     }
+                    $musicid = $_POST['musicid'];
 
                     $sql = "INSERT INTO zenek SET
                         title = '$title',
                         subtitle = '$subtitle',
                         image_name = '$image_name',
-                        music_name = '$music_name'
+                        music_name = '$music_name',
+                        musicid = '$musicid'
                     ";
 
                     $res = mysqli_query($conn, $sql);
 
                     if ($res == TRUE) {
-                        header('location:' . SITEURL . 'index.html');
+                        header('location:' . SITEURL . 'index.php');
                     }
                 }
 
